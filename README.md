@@ -1,5 +1,5 @@
 # docs-theme-ogecko
-A pure, simple and responsive Hexo theme. 
+A pure, simple and responsive Hexo theme for documenting technical information eg architecture, design, api, and process. 
 
 Includes support for the following features
 * Navigation autogen sidebar and menu
