@@ -47,7 +47,7 @@
           <% } %>
           <ul class="list-toc">
             <% pages.forEach(function(path) { %>
-              <% p = site.pages.findOne({path: path + '.html'}); %>
+              <% p = site.pages.findOne({path: path + '.html'}) || { title: 'INVALID', path: '.' }; %>
               <li class="item-toc <%- page.title === p.title ? ' current' : '' %>">
                 <a href="<%- relative_url(page.path, p.path) %>" class="sidebar-link <%- page.title === p.title ? ' current' : '' %>">
                   <span><%- p.title %></span>
